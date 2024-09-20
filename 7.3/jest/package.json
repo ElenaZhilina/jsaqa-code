@@ -4,16 +4,35 @@
   "description": "jest test",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --collectCoverage",
+    "eslint": "eslint"
   },
   "keywords": [
     "jest",
     "test",
     "jsaqa"
   ],
-  "author": "omelnikova",
+  "author": "Elena Zhilina",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^27.3.1"
+    "jest": "^27.3.1",
+    "@eslint/js": "^9.10.0",
+    "eslint": "^9.10.0",
+    "eslint-plugin-react": "^7.36.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/coverage/**"
+    ]
+  },
+"coverageThreshold": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
   }
 }
