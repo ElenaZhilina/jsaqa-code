@@ -2,6 +2,7 @@
   "name": "puppeteer-2",
   "version": "1.0.0",
   "main": "booking.test.js",
+  "type": "commonjs",
   "directories": {
     "lib": "lib"
   },
@@ -16,6 +17,8 @@
   "devDependencies": {
     "@cucumber/cucumber": "^11.0.1",
     "@eslint/js": "^9.10.0",
+    "@types/chai": "^5.0.0",
+    "chai": "^5.1.1",
     "eslint": "^9.10.0",
     "eslint-plugin-react": "^7.36.1",
     "globals": "^15.9.0",
@@ -23,5 +26,8 @@
     "jest-puppeteer": "^10.1.1",
     "prettier": "^3.3.3",
     "puppeteer": "^23.5.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
   }
 }
